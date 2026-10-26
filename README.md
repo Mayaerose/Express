@@ -85,7 +85,7 @@ Errors: 400 for empty text or a bad id, 404 when a valid id isn't in the databas
 - How to test an API with Thunder Client before building the page
 - How to connect an EJS page to my API with `fetch`
 
-VIEW APP HERE: https://express-fri5.onrender.com/
+VIEW APP HERE: https://express-fri5.onrender.com
 
 ## Author
 
