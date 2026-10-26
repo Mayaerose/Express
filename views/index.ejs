@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Affirmations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <!-- <p class="sparkle" aria-hidden="true">🌀 ⭐️ 🪷 🌿</p> -->
+      <h1>Affirmations</h1>
+      <p class="sparkle" aria-hidden="true">🌀 ⭐️ 🪷 🌿</p>
+      <p class="sub">Write something kind that you would like to say to yourself...</p>
+    </header>
+
+    <form id="addForm" class="add">
+      <label for="newText" class="sr-only">New affirmation</label>
+      <input id="newText" type="text" placeholder="I am lucky today and everyday" autocomplete="off" required>
+      <button type="submit">Add</button>
+    </form>
+    <p id="message" class="message" role="status"></p>
+
+    <p id="count" class="count"></p>
+    <ul id="list" class="list"></ul>
+    <p id="empty" class="empty" hidden>No affirmations yet. Write your first one above.</p>
+  </main>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
