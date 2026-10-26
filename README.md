@@ -6,6 +6,9 @@ A small app where you can write kind things to yourself, then save, change, or d
 
 This is a CRUD app I built to practice making my own API with Node, Express, and MongoDB. Each affirmation is one saved note with its text and the date it was made. The page talks to my API using `fetch`, so you can add a new affirmation, edit one, or delete one without the page reloading. I also tested the API by itself with Thunder Client before I built the page. There are no accounts, so it's meant to be run on my own computer.
 
+## Screenshot
+
+![The Affirmations page](screenshots/affirmations.jpg)
 
 ## Features
 
@@ -81,6 +84,8 @@ Errors: 400 for empty text or a bad id, 404 when a valid id isn't in the databas
 - How to send the right status codes, like 201, 400, and 404
 - How to test an API with Thunder Client before building the page
 - How to connect an EJS page to my API with `fetch`
+
+VIEW APP HERE: https://express-fri5.onrender.com/
 
 ## Author
 
