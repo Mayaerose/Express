@@ -34,9 +34,10 @@ app.post('/api/affirmations', async (req, res) => {
 // READ ALL: GET /api/affirmations
 app.get('/api/affirmations', async (req, res) => {
     try {
-        const affirmations = await Affirmation.find().sort({ createdAt: -1 }) // newest first
+        const affirmations = await Affirmation.find().sort({ createdAt: -1 })
         res.json(affirmations)
     } catch (err) {
+        console.error('READ ALL failed', { name: err.name, code: err.code, codeName: err.codeName })
         res.status(500).json({ error: 'Could not load affirmations' })
     }
 })
